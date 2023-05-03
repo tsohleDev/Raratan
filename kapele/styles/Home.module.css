@@ -1,0 +1,86 @@
+.bg {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../public/chess.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(-10px);
+}
+
+.jumbotron {
+    visibility: hidden;
+    animation: jump 10s infinite;
+    @apply text-tertiary text-3xl font-fuzzy-bubbles;
+}
+  
+@keyframes jump {
+    0% {
+      transform: translateY(0);
+      visibility: visible;
+    }
+    10% {
+      transform: translateY(-30px);
+    }
+    20% {
+      transform: translateY(0);
+      visibility: hidden;
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.jumbotron:nth-child(1) {
+    animation-delay: 0.005s;
+}
+
+.jumbotron:nth-child(2) {
+    animation-delay: 0.001s;
+}
+
+.jumbotron:nth-child(3) {
+    animation-delay: 0.05s;
+}
+
+.jumbotron:nth-child(4) {
+    animation-delay: 0.1s;
+}
+
+.jumbotron:nth-child(5) {
+    animation-delay: 0.101s;
+}
+
+.jumbotron:nth-child(6) {
+    animation-delay: 0.15s;
+}
+
+.hideAnimation {
+    visibility: hidden;
+    animation: hide 10s infinite;
+    @apply text-tertiary text-3xl font-fuzzy-bubbles;
+}
+
+@keyframes hide {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+}
+
+.hideAnimation:nth-child(1) {
+    animation-delay: 0.005s;
+}
+
+.hideAnimation:nth-child(2) {
+    animation-delay: 0.001s;
+}
+
+.hideAnimation:nth-child(3) {
+    animation-delay: 0.05s;
+}
